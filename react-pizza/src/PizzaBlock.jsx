@@ -12,14 +12,11 @@ const PizzaBlock = (props) => {
       />
 
       <h4 class="pizza-block__title">{props.title}</h4>
-
       <PizzaBlockSelector />
 
       <div class="pizza-block__bottom">
         <div class="pizza-block__price">from {props.price}</div>
-
         <ButtonAdd />
-
       </div>
     </div>
   )

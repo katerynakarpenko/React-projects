@@ -1,7 +1,6 @@
 import React from 'react';
 import SvgTriangleUp from './svg_component/SvgTriangleUp';
 
-
 const ContentTop = () => {
   return (
     <div class="content__top">
