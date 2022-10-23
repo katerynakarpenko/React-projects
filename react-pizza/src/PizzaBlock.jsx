@@ -1,22 +1,29 @@
 import React from 'react';
 import PizzaBlockSelector from './PizzaBlockSelector';
-import ButtonAdd from './ButtonAdd';
+import { PlusSvg } from './svg_component';
+import Button from './Button';
 
 const PizzaBlock = (props) => {
   return (
-    <div class="pizza-block">
+    <div className="pizza-block">
       <img
-        class="pizza-block__image"
+        className="pizza-block__image"
         src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
         alt="Pizza"
       />
 
-      <h4 class="pizza-block__title">{props.title}</h4>
+      <h4 className="pizza-block__title">{props.title}</h4>
       <PizzaBlockSelector />
 
-      <div class="pizza-block__bottom">
-        <div class="pizza-block__price">from {props.price}</div>
-        <ButtonAdd />
+      <div className="pizza-block__bottom">
+        <div className="pizza-block__price">from {props.price}</div>
+
+        <Button onClick={()=> alert('333')} add outline>
+          <PlusSvg />
+          <span>Add</span>
+          <i>2</i>
+       </Button>
+
       </div>
     </div>
   )
